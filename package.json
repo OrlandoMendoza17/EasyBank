@@ -1,0 +1,17 @@
+{
+  "name": "easybank",
+  "version": "1.0.0",
+  "description": "Landing\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D EasyBank Landing Page",
+  "main": "webpack.config.dev.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Landing-Page",
+    "React",
+    "SASS",
+    "Webpack"
+  ],
+  "author": "Orlando Mendoza",
+  "license": "MIT"
+}
