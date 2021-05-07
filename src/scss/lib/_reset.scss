@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font-family);
+}
+html{
+  font-size: 62.5%;
+}  
+body{
+  font-size: var(--main-font-size);
+  // background-color: $background-main-color;
+}
+input, button{
+  outline: 0;
+  background: transparent;
+  border: none;
+  // color: $primary-font-color;
+}
+button{
+  cursor: pointer;
+}
+a{
+  // color: $primary-font-color;
+  text-decoration: none;
+}
+ul, ol{
+  padding: 0;
+  list-style: none;
+}

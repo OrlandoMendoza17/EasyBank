@@ -1,4 +1,5 @@
 node_modules
 dist
+src/assets/icons
 src/assets/images
 .env
