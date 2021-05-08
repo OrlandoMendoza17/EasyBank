@@ -18,15 +18,13 @@
   }
   &__slogan{
     @include commonPadding;
+    padding-top: 40px;
     
     &--title{
       font-weight: 500;
       font-size: 3.2rem;
       padding-bottom: 30px;
       color: var(--DarkBlue);
-    }
-    &--description{
-      color: var(--GrayishBlue);
     }
     &--call-to-action{
       margin-top: 30px;

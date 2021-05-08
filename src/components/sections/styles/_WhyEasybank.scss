@@ -1,0 +1,15 @@
+.WhyEasybank{
+  @include commonPadding;
+  text-align: center;
+  background-color: var(--LightGrayishBlue);
+  
+  &__main{
+    padding-bottom: 30px;
+    &--title{
+      @include title;
+    }
+    &--description{
+      // @include description;
+    }
+  }
+}

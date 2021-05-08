@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--main-font-family);
+  color: var(--GrayishBlue);
 }
 html{
   font-size: 62.5%;
@@ -30,4 +31,7 @@ ul, ol{
 }
 img{
   width: 100%;
+}
+p{
+  line-height: 1.7;
 }

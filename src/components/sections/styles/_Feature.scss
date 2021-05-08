@@ -1,0 +1,15 @@
+.Feature{
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title{
+    padding-top: 20px;
+    font-weight: normal;
+    color: var(--DarkBlue);
+  }
+  &__description{
+    padding-top: 20px;
+  }
+}

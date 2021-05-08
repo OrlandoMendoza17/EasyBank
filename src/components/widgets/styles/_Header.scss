@@ -1,0 +1,18 @@
+.Header{
+  padding: 20px;
+  background-color: var(--White);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__logo{
+    &--image{
+      width: unset;
+    }
+  }
+  
+  &__hamburger{
+    width: 24px;
+    height: 11px;
+  }
+}
