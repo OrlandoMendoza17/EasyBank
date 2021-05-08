@@ -32,12 +32,12 @@ const Footer = () => {
       </div>
       
       <div className="Footer__links">
-        <a class="Footer__link" href="#?">About Us</a>
-        <a class="Footer__link" href="#?">Contact</a>
-        <a class="Footer__link" href="#?">Blog</a>
-        <a class="Footer__link" href="#?">Careers</a>
-        <a class="Footer__link" href="#?">Support</a>
-        <a class="Footer__link" href="#?">Privacy Policy</a>
+        <a className="Footer__link" href="#?">About Us</a>
+        <a className="Footer__link" href="#?">Contact</a>
+        <a className="Footer__link" href="#?">Blog</a>
+        <a className="Footer__link" href="#?">Careers</a>
+        <a className="Footer__link" href="#?">Support</a>
+        <a className="Footer__link" href="#?">Privacy Policy</a>
       </div>
       
       <button className="Footer__call-to-action">
