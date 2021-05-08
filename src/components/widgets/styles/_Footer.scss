@@ -1,0 +1,35 @@
+.Footer{
+  padding: 40px 20px;
+  background-color: var(--DarkBlue);
+  color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  
+  &__social-medias{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  &__social-media-links img{
+    width: 25px;
+  }
+  
+  &__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  &__link{
+    display: block;
+    color: var(--LightGrayishBlue);
+  }
+  
+  &__call-to-action{
+    @include button;
+  }
+}

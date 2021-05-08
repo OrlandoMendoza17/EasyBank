@@ -3,6 +3,7 @@ import Header from './components/widgets/Header';
 import Hero from './components/sections/Hero'
 import WhyEasybank from './components/sections/WhyEasybank';
 import Articles from './components/sections/Articles'; 
+import Footer from './components/widgets/Footer';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero/>
       <WhyEasybank/>
       <Articles/>
+      <Footer/>
     </main>
   )
 }
