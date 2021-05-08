@@ -2,6 +2,13 @@
   @include commonPadding;
   text-align: center;
   background-color: var(--LightGrayishBlue);
+  display: grid;
+  grid-template-columns: minmax(200px, 1300px);
+  justify-content: center;
+  
+  @media screen and (min-width: 1024px){
+    text-align: start;
+  }
   
   &__content{
     padding-bottom: 30px;
@@ -9,9 +16,23 @@
   &__title{
     @include title;
   }
+  &__description{
+    max-width: 525px;
+  }
   &__feautures{
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
+    
+    @media screen and (min-width: 768px){
+      grid-template-columns: repeat(2, minmax(200px, 400px));
+      justify-content: space-between;
+    }
+    @media screen and (min-width: 1024px){
+      grid-template-columns: repeat(3, minmax(200px, 400px));
+    }
+    @media screen and (min-width: 1200px){
+      grid-template-columns: repeat(4, minmax(200px, 400px));
+    }
   }
 }

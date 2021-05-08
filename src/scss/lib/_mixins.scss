@@ -1,5 +1,9 @@
 @mixin commonPadding {
   padding: 60px 24px;
+
+  @media screen and (min-width: 1024px){
+    padding: 60px 80px;
+  }
 }
 @mixin title {
   font-weight: 500;
@@ -22,4 +26,12 @@
   color: var(--White);
   background-image: 
     linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+}
+@mixin imageCover{
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

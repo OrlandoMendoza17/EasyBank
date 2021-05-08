@@ -1,5 +1,14 @@
+
+:root{
+  --articleItem-padding: 24px;
+  @media screen and (min-width: 375px){
+    --articleItem-padding: 38px;
+  }
+  @media screen and (min-width: 1024px){
+    --articleItem-padding: 24px;
+  }
+}
 .ArticlesItem{
-  $itemPadding: 38px;
   background-color: var(--White);
   border-radius: 7px;
   max-width: 400px;
@@ -8,18 +17,23 @@
   flex-direction: column;
   gap: 10px;
   
+  &__image-container{
+    position: relative;
+    height: 250px;
+  }
   &__image{
-    padding-bottom: 24px;
+    @include imageCover;
   }
   &__author{
-    padding: 0 $itemPadding;
+    padding: 0 var(--articleItem-padding);
+    padding-top: 24px;
   }
   
   &__content{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: $itemPadding;
+    padding: var(--articleItem-padding);
     padding-top: 0;
     
   }

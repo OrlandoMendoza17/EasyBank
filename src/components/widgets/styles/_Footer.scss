@@ -27,6 +27,9 @@
   &__link{
     display: block;
     color: var(--LightGrayishBlue);
+    &:hover{
+      color: var(--LimeGreen)
+    }
   }
   
   &__call-to-action{

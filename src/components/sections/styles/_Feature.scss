@@ -4,7 +4,15 @@
   align-items: center;
   gap: 20px;
   
+  @media screen and (min-width: 768px){
+    max-width: 231px;
+  }
+  @media screen and (min-width: 1024px){
+    align-items: start;
+  }
+  
   &__title{
     @include lightTitle;
+    font-size: 1.7rem;
   }
 }

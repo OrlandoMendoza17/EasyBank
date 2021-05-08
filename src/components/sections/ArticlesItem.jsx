@@ -4,7 +4,9 @@ const ArticlesItem = ({title, description, author, imageCover}) => {
   return (
     <article className="ArticlesItem">
       <figure className="ArticlesItem__cover">
-        <img className="ArticlesItem__image" src={imageCover} alt="" />
+        <div className="ArticlesItem__image-container">
+          <img className="ArticlesItem__image" src={imageCover} alt="" />
+        </div>
         <figcaption className="ArticlesItem__author">
           <small>{author}</small>
         </figcaption>
