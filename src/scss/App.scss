@@ -1,4 +1,6 @@
 @import './lib/variables';
 @import './lib/reset';
+@import './lib/mixins';
 
-// Components Styles
+// Sections Styles
+@import '../components/sections/styles/Hero';

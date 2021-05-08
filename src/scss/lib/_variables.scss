@@ -1,16 +1,16 @@
 :root{
   // ### Primary
-  --DarkBlue: hsl(233, 26%, 24%);
-  --LimeGreen: hsl(136, 65%, 51%);
-  --BrightCyan: hsl(192, 70%, 51%);
+  --DarkBlue: #2d314d;
+  --LimeGreen: #31d35c;
+  --BrightCyan: #2bb7da;
 
   // ### Neutral
-  --GrayishBlue: hsl(233, 8%, 62%);
-  --LightGrayishBlue: hsl(220, 16%, 96%);
-  --VeryLightGray: hsl(0, 0%, 98%);
-  --White: hsl(0, 0%, 100%);
+  --GrayishBlue: #9698a6;
+  --LightGrayishBlue: #f3f4f6;
+  --VeryLightGray: #fafafa;
+  --White: #ffffff;
   
   //Fonts
   --main-font-family: 'Public Sans', sans-serif;
-  --main-font-size: 1.6rem;
+  --main-font-size: 1.4rem;
 }
