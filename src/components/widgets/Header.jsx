@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <header className="Header">
       <div className="Header__logo">
-        <img className="Header__logo--image" src={brandLogo} alt="" />
+        <img className="Header__logo-image" src={brandLogo} alt="" />
       </div>
       <Hambuger className="Header__hamburger"/>
     </header>
   )
 }
 
-export default Header
+export default Header;

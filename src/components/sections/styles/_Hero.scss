@@ -12,23 +12,21 @@
     background-size: 345px, cover;
     background-position: center bottom, center;
     
-    &--image{
-      max-width: 350px;
-    }
   }
-  &__slogan{
+  
+  &__content{
     @include commonPadding;
     padding-top: 40px;
-    
-    &--title{
-      font-weight: 500;
-      font-size: 3.2rem;
-      padding-bottom: 30px;
-      color: var(--DarkBlue);
-    }
-    &--call-to-action{
-      margin-top: 30px;
-      @include button;
-    }
+  }
+  
+  &__title{
+    font-weight: 500;
+    font-size: 3.2rem;
+    padding-bottom: 30px;
+    color: var(--DarkBlue);
+  }
+  &__call-to-action{
+    margin-top: 30px;
+    @include button;
   }
 }

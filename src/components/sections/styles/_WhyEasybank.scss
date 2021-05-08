@@ -3,11 +3,11 @@
   text-align: center;
   background-color: var(--LightGrayishBlue);
   
-  &__main{
+  &__content{
     padding-bottom: 30px;
-    &--title{
-      @include title;
-    }
+  }
+  &__title{
+    @include title;
   }
   &__feautures{
     display: grid;

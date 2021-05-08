@@ -8,13 +8,11 @@
   flex-direction: column;
   gap: 10px;
   
-  &__cover{
-    &--image{
-      padding-bottom: 24px;
-    }
-    &--author{
-      padding: 0 $itemPadding;
-    }
+  &__image{
+    padding-bottom: 24px;
+  }
+  &__author{
+    padding: 0 $itemPadding;
   }
   
   &__content{
@@ -24,8 +22,8 @@
     padding: $itemPadding;
     padding-top: 0;
     
-    &--title{
-      @include lightTitle;
-    }
+  }
+  &__title{
+    @include lightTitle;
   }
 }
