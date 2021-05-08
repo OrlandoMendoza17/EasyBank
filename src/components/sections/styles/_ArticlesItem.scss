@@ -1,0 +1,31 @@
+.ArticlesItem{
+  $itemPadding: 38px;
+  background-color: var(--White);
+  border-radius: 7px;
+  max-width: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  &__cover{
+    &--image{
+      padding-bottom: 24px;
+    }
+    &--author{
+      padding: 0 $itemPadding;
+    }
+  }
+  
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: $itemPadding;
+    padding-top: 0;
+    
+    &--title{
+      @include lightTitle;
+    }
+  }
+}

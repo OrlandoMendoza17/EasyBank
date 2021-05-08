@@ -1,4 +1,5 @@
 import onlineImage from './assets/icons/icon-online.svg'
+import currencyImage from './assets/images/image-currency.jpg'
 
 export default {
   features: [
@@ -26,6 +27,40 @@ export default {
       icon: onlineImage,
       title: 'Open API',
       description: `Manage your saving, investments, pensions, and much more from one account. Tracking your money has never been easier.`
+    },
+  ],
+  articles: [
+    {
+      id: '1',
+      imageCover: currencyImage,
+      title: 'Receive money in any currency with no fees',
+      author: 'By Claire Robinson',
+      description: `The world is getting smaller and we’re becoming more mobile. So why should you be
+      forced to only receive money in a single …`
+    },
+    {
+      id: '2',
+      imageCover: currencyImage,
+      title: 'Receive money in any currency with no fees',
+      author: 'By Claire Robinson',
+      description: `The world is getting smaller and we’re becoming more mobile. So why should you be
+      forced to only receive money in a single …`
+    },
+    {
+      id: '3',
+      imageCover: currencyImage,
+      title: 'Receive money in any currency with no fees',
+      author: 'By Claire Robinson',
+      description: `The world is getting smaller and we’re becoming more mobile. So why should you be
+      forced to only receive money in a single …`
+    },
+    {
+      id: '4',
+      imageCover: currencyImage,
+      title: 'Receive money in any currency with no fees',
+      author: 'By Claire Robinson',
+      description: `The world is getting smaller and we’re becoming more mobile. So why should you be
+      forced to only receive money in a single …`
     },
   ]
 }

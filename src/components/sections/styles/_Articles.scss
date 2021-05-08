@@ -1,0 +1,16 @@
+.Articles{
+  @include commonPadding;
+  background-color: var(--VeryLightGray);
+  
+  &__title{
+    @include title;
+    text-align: center;
+  }
+  
+  &__items{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+}

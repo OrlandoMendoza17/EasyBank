@@ -8,8 +8,10 @@
     &--title{
       @include title;
     }
-    &--description{
-      // @include description;
-    }
+  }
+  &__feautures{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
