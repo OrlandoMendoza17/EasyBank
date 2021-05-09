@@ -2,33 +2,89 @@
   padding: 40px 20px;
   background-color: var(--DarkBlue);
   color: var(--White);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   gap: 25px;
+  
+  @media screen and (min-width: 768px){
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  &__logo{
+    width: 139px; 
+  }
+  
+  &__section{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: space-between;
+    gap: 15px;
+    
+    @media screen and (min-width: 768px){
+      &--start{
+        justify-items: start;
+      }
+      &--center{
+        justify-items: center;
+      }
+      &--end{
+        justify-items: end;
+      }
+    }
+  }
   
   &__social-medias{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 13px;
   }
-  
-  &__social-media-links img{
+  &__social-media-links{
+    display: flex;
+  }
+  &__icon{
     width: 25px;
+    height: 25px;
+    fill: var(--White);
+    
+    &:hover{
+      fill: var(--LimeGreen);
+    }
   }
   
   &__links{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    justify-items: center;
+    
+    @media screen and (min-width: 425px){
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 768px){
+      justify-self: start;
+    }
   }
   
   &__link{
     display: block;
     color: var(--LightGrayishBlue);
     &:hover{
-      color: var(--LimeGreen)
+      color: var(--LimeGreen);
+    }
+    
+    //Esto se hace para que se organicen los item en desktop
+    //sin tener que modificar el html
+    @media screen and (min-width: 768px){
+      @for $i from 1 to 4{
+        &:nth-child(#{$i}){
+          grid-column: 1;
+        }
+      }
+      @for $i from 4 to 7{
+        &:nth-child(#{$i}){
+          grid-column: 2;
+          grid-row: $i - 3;
+        }
+      }
     }
   }
   
