@@ -3,11 +3,6 @@ import budgetingImage from './assets/icons/icon-budgeting.svg'
 import onboardingImage from './assets/icons/icon-onboarding.svg'
 import apiImage from './assets/icons/icon-api.svg'
 
-import currencyImage from './assets/images/image-currency.jpg'
-import restaurantImage from './assets/images/image-restaurant.jpg'
-import planeImage from './assets/images/image-plane.jpg'
-import confettiImage from './assets/images/image-confetti.jpg'
-
 export default {
   features: [
     {
@@ -39,7 +34,7 @@ export default {
   articles: [
     {
       id: '1',
-      imageCover: currencyImage,
+      imageCover: 'https://i.imgur.com/5R0KHRJ.jpg',
       title: 'Receive money in any currency with no fees',
       author: 'By Claire Robinson',
       description: `The world is getting smaller and we’re becoming more mobile. So why should you be
@@ -47,7 +42,7 @@ export default {
     },
     {
       id: '2',
-      imageCover: restaurantImage,
+      imageCover: 'https://i.imgur.com/7d6ucR5.jpg',
       title: 'Treat yourself without worrying about money',
       author: 'By Wilson Hutton',
       description: `Our simple budgeting feature allows you to separate out your spending and set
@@ -55,7 +50,7 @@ export default {
     },
     {
       id: '3',
-      imageCover: planeImage,
+    imageCover: 'https://i.imgur.com/zWdSHHa.jpg',
       title: 'Take your Easybank card wherever you go',
       author: 'By Wilson Hutton',
       description: `We want you to enjoy your travels. This is why we don’t charge any fees on purchases
@@ -63,7 +58,7 @@ export default {
     },
     {
       id: '4',
-      imageCover: confettiImage,
+      imageCover: 'https://i.imgur.com/pMLNHxO.jpg',
       title: 'Our invite-only Beta accounts are now live!',
       author: 'By Claire Robinson',
       description: `After a lot of hard work by the whole team, we’re excited to launch our closed beta.

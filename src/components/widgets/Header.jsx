@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import brandLogo from '../../assets/icons/logo.svg'
+import BrandLogo from '../icons/BrandLogo';
 import Hambuger from '../icons/Hamburger';
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="Header">
       <div className="Header__logo">
-        <img className="Header__logo-image" src={brandLogo} alt="" />
+        <BrandLogo className="Header__brand-logo"/>
       </div>
       
       <div className={`Header__overlay ${navOpened? 'Header__overlay--open' : ''}`}>

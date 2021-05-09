@@ -4,14 +4,15 @@ import Youtube from '../../components/icons/Youtube';
 import Twitter from '../../components/icons/Twitter';
 import Pinterest from '../../components/icons/Pinterest';
 import Instagram from '../../components/icons/Instagram';
-import brandLogo from '../../assets/icons/logo-light.svg';
+import BrandLogo from '../../components/icons/BrandLogo';
 
 const Footer = () => {
   return (
     <footer className="Footer">
        
       <div className="Footer__section Footer__section--start">
-        <img className="Footer__logo" src={brandLogo} alt=""/>
+        <BrandLogo color="light" className="Footer__logo"/>
+
         <div className="Footer__social-medias">
           <a href="#?" className="Footer__social-media-links">
             <Facebook className="Footer__icon"/>
