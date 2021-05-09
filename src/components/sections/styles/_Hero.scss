@@ -1,6 +1,18 @@
 .Hero{
   padding-top: 0;
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media screen and (min-width: 768px){
+    text-align: start;
+    grid-template-columns: minmax(auto, 550px) 1fr;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 1440px){
+    grid-template-columns: 1fr 1fr;
+  }
   
   &__cover{
     height: 100%;
@@ -12,11 +24,71 @@
     background-size: 345px, cover;
     background-position: center bottom, center;
     
+    @media screen and (min-width: 768px){
+      min-height: 350px;
+      grid-column: 2;
+      background-image: 
+        url('../assets/icons/bg-intro-desktop.svg'); 
+      background-repeat: no-repeat;
+      background-size: 1700px;
+      background-position: -95px center;
+    }
+    @media screen and (min-width: 1024px){
+      min-height: 450px;
+    }
+    @media screen and (min-width: 1400px){
+      min-height: 650px;
+    }
+  }
+  
+  &__image{
+    position: absolute;
+    right: 0;
+    display: none;
+      
+    @media screen and (min-width: 768px){
+      width: 316px;
+      height: 358px;
+      display: block;
+      background-image: url('../assets/images/image-mockups.png'); 
+      background-size: 316px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    @media screen and (min-width: 1024px){
+      width: 616px;
+      height: 578px;
+      background-size: 527px;
+      background-position: 60px -117px;
+    }
+    @media screen and (min-width: 1200px){
+      background-position: 10px -117px;
+    }
+    @media screen and (min-width: 1400px){
+      height: 778px;
+      background-size: 727px;
+    }
   }
   
   &__content{
-    @include commonPadding;
-    padding-top: 40px;
+    padding: 60px;
+    
+    @media screen and (min-width: 768px){
+      padding: 0;
+      margin-left: 60px;
+      text-align: start;
+      align-self: center;
+      max-width: 390px;
+      grid-column: 1;
+      grid-row: 1;
+    }
+    @media screen and (min-width: 1024px){
+      margin: 0;
+      justify-self: center;
+    }
+    @media screen and (min-width: 1700px){
+      max-width: 550px;
+    }
   }
   
   &__title{
