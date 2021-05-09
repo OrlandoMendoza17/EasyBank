@@ -34,7 +34,7 @@ export default {
   articles: [
     {
       id: '1',
-      imageCover: 'https://i.imgur.com/5R0KHRJ.jpg',
+      imageCover: 'https://i.imgur.com/zrqj2xP.jpg',
       title: 'Receive money in any currency with no fees',
       author: 'By Claire Robinson',
       description: `The world is getting smaller and we’re becoming more mobile. So why should you be
@@ -42,7 +42,7 @@ export default {
     },
     {
       id: '2',
-      imageCover: 'https://i.imgur.com/7d6ucR5.jpg',
+      imageCover: 'https://i.imgur.com/mA43XyN.jpg',
       title: 'Treat yourself without worrying about money',
       author: 'By Wilson Hutton',
       description: `Our simple budgeting feature allows you to separate out your spending and set
@@ -50,7 +50,7 @@ export default {
     },
     {
       id: '3',
-    imageCover: 'https://i.imgur.com/zWdSHHa.jpg',
+    imageCover: 'https://i.imgur.com/RLEDss8.jpg',
       title: 'Take your Easybank card wherever you go',
       author: 'By Wilson Hutton',
       description: `We want you to enjoy your travels. This is why we don’t charge any fees on purchases
@@ -58,7 +58,7 @@ export default {
     },
     {
       id: '4',
-      imageCover: 'https://i.imgur.com/pMLNHxO.jpg',
+      imageCover: 'https://i.imgur.com/CXx6thV.jpg',
       title: 'Our invite-only Beta accounts are now live!',
       author: 'By Claire Robinson',
       description: `After a lot of hard work by the whole team, we’re excited to launch our closed beta.
