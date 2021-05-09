@@ -1,5 +1,8 @@
 .Header{
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
   padding: 20px;
   background-color: var(--White);
@@ -7,12 +10,99 @@
   justify-content: space-between;
   align-items: center;
   
+  @media screen and (min-width: 768px){
+    position: relative;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: 992px){
+    padding: 0 60px;
+  }
+  @media screen and (min-width: 1440px){
+    padding: 0 100px;
+  }
+  
   &__logo-image{
     width: unset;
   }
   
   &__hamburger{
-    width: 24px;
-    height: 11px;
+    &-icon{
+      width: 24px;
+      height: 11px;
+    }
+    @media screen and (min-width: 768px){
+      display: none;
+    }
+  }
+  &__overlay{
+    position: fixed;
+    z-index: 2;
+    top: 56px;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: .75);
+    display: none;
+    
+    &--open{
+      display: block;
+    }
+    
+    @media screen and (min-width: 768px){
+      display: block;
+      position: static;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+  &__links{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--White);
+    
+    @media screen and (min-width: 768px){
+      height: 56px;
+      position: static;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  &__link{
+    position: relative;
+    padding: 19.5px 0;
+    transition: .3s;
+    
+    &::after{
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      background-image: var(--gradient);
+      width: 100%;
+      transition: .3s;
+    }
+    
+    &:hover{
+      color: var(--DarkBlue);
+      &::after{
+        height: 3px;
+      }
+    }
+  }
+  
+  &__call-to-action{
+    @include button;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    display: none;
+    
+    @media screen and (min-width: 768px){
+      display: block;
+    }
   }
 }

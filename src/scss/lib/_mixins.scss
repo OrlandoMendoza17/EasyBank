@@ -27,8 +27,7 @@
   padding: 15px 30px;
   font-size: 1.6rem;
   color: var(--White);
-  background-image: 
-    linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+  background-image: var(--gradient);
 }
 @mixin imageCover{
   position: absolute;
