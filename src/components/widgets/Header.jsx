@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import BrandLogo from '../icons/BrandLogo';
-import Hambuger from '../icons/Hamburger';
+import HamburgerButton from './HamburgerButton';
 
 const Header = () => {
   const [navOpened, setNavOpened] = useState(false)
@@ -28,7 +28,10 @@ const Header = () => {
         className="Header__hamburger"
         onClick={() => setNavOpened(!navOpened)}
       >
-        <Hambuger className="Header__hamburger-icon"/>
+        <HamburgerButton 
+          isOpen={navOpened} 
+          className="Header__hamburger-icon"
+        />
       </button>
     </header>
   )

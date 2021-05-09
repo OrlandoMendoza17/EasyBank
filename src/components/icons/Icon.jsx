@@ -2,7 +2,7 @@ import React from 'react';
 
 function Icon(props){
   
-  const {color, size, viewBox, className}  = props
+  const {color, size, viewBox, className, style}  = props
   
   return(
     <svg
@@ -11,6 +11,7 @@ function Icon(props){
       height={size}
       viewBox={viewBox}
       className={className}
+      style={style}
     >
       {props.children}
     </svg>
