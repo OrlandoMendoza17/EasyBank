@@ -39,7 +39,8 @@
   }
   
   &__social-medias{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     gap: 13px;
   }

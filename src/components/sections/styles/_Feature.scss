@@ -1,15 +1,15 @@
 .Feature{
   max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   gap: 20px;
   
   @media screen and (min-width: 992px){
     max-width: 231px;
   }
   @media screen and (min-width: 1024px){
-    align-items: start;
+    justify-items: start;
   }
   
   &__title{

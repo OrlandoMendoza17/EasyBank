@@ -13,8 +13,8 @@
   border-radius: 7px;
   max-width: 400px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
   
   &__image-container{
@@ -30,8 +30,8 @@
   }
   
   &__content{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
     padding: var(--articleItem-padding);
     padding-top: 0;
